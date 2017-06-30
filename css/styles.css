@@ -25,3 +25,9 @@ video {
 p {
   font-size: 1.1em;
 }
+
+/************* MEDIAELEMENT STYLES ***************/
+
+.mejs__controls:not([style*='display: none']) {
+  background: #3886c7;
+}
