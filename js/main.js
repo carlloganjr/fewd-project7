@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   const vid = document.querySelector('video');
   const spanList = document.querySelectorAll('.spanList');
   const div = document.querySelector('.videoWrapper');
@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     53.760, 57.780, 60.150];
 
 
-  vid.addEventListener('play', () => {
-    vid.addEventListener('timeupdate', () => {
+  vid.addEventListener('play', function() {
+    vid.addEventListener('timeupdate', function() {
       for (let i = 0; i < spanList.length; i += 1) {
         let highlight = spanList[i];
         let start = playTimes[i];
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    div.addEventListener('click', (e) => {
+    div.addEventListener('click', function(e) {
       for (let i = 0; i < spanList.length; i += 1) {
         let click = spanList[i];
         let position = playTimes[i];
